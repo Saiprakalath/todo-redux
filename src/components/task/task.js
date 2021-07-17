@@ -1,5 +1,6 @@
 import React from "react";
 import DialogBox from "../dialog/dialog";
+import { deleteTask } from "../../Api/taskApi";
 import { getTask, updateTask, createTask } from "../../redux/action/taskAction";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
@@ -115,6 +116,17 @@ const Task = () => {
     }
   };
 
+  const handleDelete = async (e, index) => {
+    try {
+      const cloneData = JSON.parse(JSON.stringify(taskConfig));
+      await deleteTask(cloneData[index].id);
+      await getTask()(dispatch);
+      toast.success("successfully deleted");
+    } catch (ex) {
+      toast.error(ex);
+    }
+  };
+
   return (
     <>
       <div className="container">
@@ -146,8 +158,11 @@ const Task = () => {
                   <div className="col-5">
                     <strong>Task</strong>
                   </div>
-                  <div className="col-5">
+                  <div className="col-3">
                     <strong>Priority</strong>
+                  </div>
+                  <div className="col-2">
+                    <strong>Action</strong>
                   </div>
                 </div>
                 {!!taskConfig?.length &&
@@ -164,8 +179,15 @@ const Task = () => {
                           </button>
                         </div>
                         <div className="col-5 p-3">{s.task}</div>
-                        <div className="col-5 p-3">
+                        <div className="col-3 p-3">
                           {getPriority(s.priority)}
+                        </div>
+                        <div className="col-2 p-3">
+                        <button  onClick={(e) => {
+                              handleDelete(e, index);
+                            }}>
+                        🗑️
+                        </button>
                         </div>
                       </div>
                     );
