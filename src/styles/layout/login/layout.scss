@@ -1,0 +1,37 @@
+$color-theme:  #0D98BA;
+$color-blue: #009dde;
+$color-light: #fafafa;
+$color-gray: #7c7979;
+$color-toolbar: #150E56;
+$color-yellow: #f7df1e;
+$color-green: #4caf50;
+$color-white: #ffff;
+$color-darker: #252525;
+$color-danger: #f43636;
+$color-login:#75E6DA;
+
+
+
+.login-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:$color-theme;
+
+    strong{
+        color: $color-white;
+        font-size: 25px;
+        padding: 5px !important;
+        letter-spacing: 1px;
+        
+    }
+}
+strong{
+    color: $color-darker;
+    font-size: 25px;
+    padding: 5px !important;
+    letter-spacing: 1px;
+}
+
+

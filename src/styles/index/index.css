@@ -1,0 +1,261 @@
+.login-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #0D98BA;
+}
+
+.login-layout strong {
+  color: #ffff;
+  display: block;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.task-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border: 2px solid #ebebeb;
+}
+
+.task-border_task_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.task-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  padding: 10px;
+  border: 2px solid #ebebeb;
+}
+
+.dialog {
+  height: 250px !important;
+  border: 2px solid #ebebeb !important;
+  border-radius: 20px;
+  background-color: #a1cae2;
+}
+
+.dialogText {
+  padding: 15px !important;
+  width: 350px !important;
+  background-color: #ffff;
+  border-radius: 30px;
+}
+
+.divConfirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.okbutton {
+  background: #4caf50 none repeat scroll 0% 0%;
+  border-radius: 6px;
+  border: 2px solid #444444;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0px 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.closebutton {
+  background: #f43636 none repeat scroll 0% 0%;
+  border-radius: 6px;
+  border: 2px solid #444444;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0px 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.low__button {
+  background: #f43636;
+  border-radius: 6px;
+  color: #252525 !important;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  min-height: 30px;
+  width: 120px;
+  padding: 0.2rem 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.high__button {
+  background: #4caf50;
+  border-radius: 6px;
+  color: #252525 !important;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  width: 120px;
+  min-height: 30px;
+  padding: 0.2rem 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.medium__button {
+  background: #f7df1e;
+  border-radius: 6px;
+  color: #252525 !important;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  width: 120px;
+  min-height: 30px;
+  padding: 0.2rem 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.divBody {
+  padding: 30px;
+}
+
+.imageColor {
+  fill: #4caf50;
+}
+
+.alert_dialog {
+  margin-top: -70px !important;
+  width: 300px !important;
+  height: 70px !important;
+  z-index: 2000 !important;
+  border: 2px solid #7c7979 !important;
+  border-radius: 20px;
+}
+
+.form {
+  width: 100%;
+  width: 500px;
+  padding: 15px;
+  border-radius: 20px;
+  margin: auto;
+  background-color: #75E6DA;
+}
+
+.form h1 {
+  color: "#444444 !important";
+  display: "block";
+  text-align: "center";
+  font-size: "2.125rem";
+  font-weight: 600;
+}
+
+.form .form-signin .form-control {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form .form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form__base {
+  margin: 0.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.form__base-label {
+  font-weight: 800;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.form__base input[type="input"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form__base input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+}
+
+.form button {
+  background: #009dde;
+  border-radius: 6px;
+  border: 2px solid #444444;
+  color: #ffff;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  min-height: 30px;
+  padding: 0.5rem 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+._button {
+  background: #009dde none repeat scroll 0% 0%;
+  border-radius: 6px;
+  border: 2px solid #444444;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0px 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
